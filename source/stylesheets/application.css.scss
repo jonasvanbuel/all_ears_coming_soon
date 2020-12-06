@@ -1,0 +1,21 @@
+// Config variables
+
+
+// External libraries
+
+
+// CSS Partials
+@import "partials/navbar.css";
+
+// Reset
+body {
+  margin: 0;
+}
+
+// Custom
+.container {
+  width: 30vw;
+  margin: 0 auto;
+
+  background-color: orange;
+}
