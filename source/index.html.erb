@@ -46,15 +46,4 @@ title: All Ears - coming soon
 <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
 <!-- Overwrite default Mailchimp error / succes responses -->
-<script>
-  var target = document.getElementById('mce-success-response');
-  var observer = new MutationObserver(function(mutations) {
-    mutations.forEach(function(mutation) {
-      if (target.innerHTML === "Thank you for subscribing!") {
-        target.innerHTML = "Check your email!";
-      }
-    });
-  });
-  var config = { attributes: true, childList: true, characterData: true };
-  observer.observe(target, config);
-</script>
+<%= javascript_include_tag "mailchimp_success_error_message" %>
