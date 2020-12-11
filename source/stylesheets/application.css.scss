@@ -1,21 +1,21 @@
-// Config variables
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+// Config variables
+@import "variables";
 
 // External libraries
 
 
 // CSS Partials
-@import "partials/banner.css";
+@import "partials/container";
+@import "partials/banner";
+@import "partials/logo-button";
+@import "partials/content";
+@import "partials/subscribe-form";
 
 // Reset
 body {
   margin: 0;
-}
-
-// Custom
-.container {
-  width: 30vw;
-  margin: 0 auto;
-
-  background-color: orange;
 }

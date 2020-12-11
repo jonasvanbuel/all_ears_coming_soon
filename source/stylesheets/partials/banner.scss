@@ -1,0 +1,18 @@
+.banner {
+  height: $banner-height;
+  width: 100%;
+
+  // background-color: yellow;
+}
+
+.banner .coming-soon {
+  font-family: $header-font;
+  font-weight: 800;
+  font-size: 48px;
+  color: $dark-blue;
+
+  transform: rotate($logo-angle);
+}
+.banner.logo-button {
+
+}
