@@ -1,4 +1,81 @@
 .subscribe-form {
   padding: 24px;
   font-family: $body-font;
+  color: $dark-blue;
+
+  background-color: $blue-oyster-bay;
+  border-radius: 24px;
+  padding: 40px;
+  padding-bottom: 60px;
+  margin-bottom: 80px;
+
+  position: relative;
+}
+
+.subscribe-form > h2 {
+  margin-top: 0;
+
+  font-size: 20px;
+  font-weight: 400;
+
+  span {
+    font-size: 24px;
+    font-weight: 800;
+  }
+}
+
+.subscribe-form .mc-field-group {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 12px;
+
+    margin-top: 14px;
+    margin-bottom: 8px;
+  }
+
+  input {
+    height: 32px;
+
+    outline: none;
+    border: none;
+    border-radius: 16px;
+
+    font-family: $body-font;
+    font-size: 16px;
+    font-weight: 700;
+    color: $dark-blue;
+
+    padding: 3px 20px 1px 20px;
+  }
+
+  input:focus {
+    box-shadow: inset 2px 3px 3px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.subscribe-form input[type="submit"] {
+  background-color: $dark-blue;
+  border: none;
+
+  font-family: $body-font;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+
+  height: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 20px;
+}
+
+.subscribe-form .clear {
+  position: absolute;
+  bottom: -20px;
+  right: 40px;
+}
+
+.custom-mce-inline-error {
+  background-color: yellow;
 }
