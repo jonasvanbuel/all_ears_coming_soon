@@ -9,11 +9,13 @@
 
 
 // CSS Partials
+@import "partials/fonts";
 @import "partials/container";
 @import "partials/banner";
 @import "partials/logo-button";
 @import "partials/content";
 @import "partials/subscribe-form";
+@import "partials/footer";
 
 // Reset
 body {
