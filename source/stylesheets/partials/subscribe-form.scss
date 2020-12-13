@@ -1,15 +1,14 @@
 .subscribe-form {
-  padding: 24px;
   font-family: $body-font;
   color: $dark-blue;
 
   background-color: $blue-oyster-bay;
   border-radius: 24px;
-  padding: 40px;
-  padding-bottom: 60px;
-  margin-bottom: 80px;
+  box-shadow: inset 0px -5px 0px $dark-blue;
 
   position: relative;
+  padding: 32px 20px 40px 20px;
+  margin-bottom: 80px;
 }
 
 .subscribe-form > h2 {
@@ -55,6 +54,12 @@
   }
 }
 
+.subscribe-form .submit-button-container {
+  position: absolute;
+  bottom: -20px;
+  right: 40px;
+}
+
 .subscribe-form input[type="submit"] {
   background-color: $dark-blue;
   border: none;
@@ -70,12 +75,29 @@
   border-radius: 20px;
 }
 
-.subscribe-form .clear {
-  position: absolute;
-  bottom: -20px;
-  right: 40px;
+.subscribe-form input[type="submit"]:hover {
+  cursor: pointer;
 }
 
 .custom-mce-inline-error {
   background-color: yellow;
+}
+
+#mce-responses {
+  padding-top: 16px;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 576px) {
+  .subscribe-form {
+    padding: 40px 24px 48px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    padding: 40px;
+    padding-bottom: 48px;
+  }
 }

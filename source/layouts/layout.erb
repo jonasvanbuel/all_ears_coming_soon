@@ -29,20 +29,5 @@
     <!-- Mailchimp error / success responses -->
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
     <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-    <script>
-      const targetNode = document.getElementById('mc_embed_signup');
-      const mcConfig = { attributes: true, childList: true, subtree: true };
-      const callback = function(mutationsList, observer) {
-        // Use traditional 'for loops' for IE 11
-        for(const mutation of mutationsList) {
-          if (mutation.type === 'childList' && mutation.addedNodes[0].classList[0] === 'mce_inline_error') {
-            const mceInlineError = mutation.addedNodes[0];
-            mceInlineError.setAttribute('style', 'background-color:yellow;');
-          }
-        }
-      };
-      const mcOberserver = new MutationObserver(callback);
-      mcOberserver.observe(targetNode, mcConfig);
-    </script>
   </body>
 </html>
