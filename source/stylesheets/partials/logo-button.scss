@@ -1,7 +1,7 @@
 .logo-button {
-  height: $logo-width;
-  width: $logo-width;
-  border-radius: $logo-width / 2;
+  height: $logo-width-small;
+  width: $logo-width-small;
+  border-radius: $logo-width-small / 2;
 
   background-color: $dark-blue;
 
@@ -12,10 +12,23 @@
               2px 4px 12px rgba(0, 0, 0, 0.3),
               0px 3px 3px rgba(0, 0, 0, 0.2);
 
-  margin-top: 40px;
-  margin-left: 80px;
+  margin-top: 5vh;
+  margin-bottom: 2.5vh;
+  margin-left: 20%;
 }
 
-.logo-button.logo-foreground {
+.logo-button .logo-foreground {
   transform: rotate($logo-angle);
+}
+
+@media screen and (min-width: 576px) {
+  .logo-button {
+    height: $logo-width;
+    width: $logo-width;
+    border-radius: $logo-width / 2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
 }

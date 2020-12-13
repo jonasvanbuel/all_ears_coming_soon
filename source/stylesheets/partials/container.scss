@@ -1,8 +1,8 @@
 .container {
-  margin: 0 auto;
-  // background-color: orange;
+  // background-color: yellow;
 
   width: $container-width-small;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 576px) {
