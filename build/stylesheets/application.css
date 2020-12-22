@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap");
+.bodyfont {
+  color: #061558;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.5; }
+
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: 500px; } }
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 600px; } }
+
+.banner {
+  width: 100%; }
+
+.banner.container {
+  position: relative; }
+
+.banner .coming-soon {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  color: #061558;
+  text-align: center;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  position: relative;
+  margin-top: 0; }
+
+@media screen and (min-width: 576px) {
+  .banner .coming-soon {
+    font-size: 3.5rem; } }
+
+@media screen and (min-width: 768px) {
+  .banner .coming-soon {
+    font-size: 4rem; } }
+
+.logo-button {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: #061558;
+  -webkit-box-shadow: inset -3px -1px 5px rgba(255, 255, 255, 0.3), inset 5px 3px 12px -2px rgba(255, 255, 255, 0.4), inset -8px -16px 20px 0px rgba(0, 0, 0, 0.2), 0px 0px 12px 0px rgba(0, 0, 0, 0.4), 2px 4px 12px rgba(0, 0, 0, 0.3), 0px 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: inset -3px -1px 5px rgba(255, 255, 255, 0.3), inset 5px 3px 12px -2px rgba(255, 255, 255, 0.4), inset -8px -16px 20px 0px rgba(0, 0, 0, 0.2), 0px 0px 12px 0px rgba(0, 0, 0, 0.4), 2px 4px 12px rgba(0, 0, 0, 0.3), 0px 3px 3px rgba(0, 0, 0, 0.2);
+  margin-top: 5vh;
+  margin-bottom: 2.5vh;
+  margin-left: 20%; }
+
+.logo-button .logo-foreground {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg); }
+
+@media screen and (min-width: 576px) {
+  .logo-button {
+    height: 120px;
+    width: 120px;
+    border-radius: 60px; } }
+
+p {
+  margin-top: 0;
+  margin-bottom: 0; }
+  p span {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800; }
+
+.content {
+  margin-top: 10vh;
+  margin-bottom: 7.5vh; }
+
+.subscribe-form {
+  font-family: "Montserrat", sans-serif;
+  color: #061558;
+  background-color: #cbedf2;
+  border-radius: 24px;
+  -webkit-box-shadow: inset 0px -5px 0px #061558;
+          box-shadow: inset 0px -5px 0px #061558;
+  position: relative;
+  padding: 32px 20px 40px 20px;
+  margin-bottom: 80px; }
+
+.subscribe-form > h2 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 400; }
+  .subscribe-form > h2 span {
+    font-size: 24px;
+    font-weight: 800; }
+
+.subscribe-form .mc-field-group {
+  display: flex;
+  flex-direction: column; }
+  .subscribe-form .mc-field-group label {
+    font-size: 12px;
+    margin-top: 14px;
+    margin-bottom: 8px; }
+  .subscribe-form .mc-field-group input {
+    height: 32px;
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #061558;
+    padding: 3px 20px 1px 20px; }
+  .subscribe-form .mc-field-group input:focus {
+    -webkit-box-shadow: inset 2px 3px 3px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 2px 3px 3px rgba(0, 0, 0, 0.25); }
+
+.subscribe-form .submit-button-container {
+  position: absolute;
+  bottom: -20px;
+  right: 40px; }
+
+.subscribe-form input[type="submit"] {
+  background-color: #061558;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  height: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 20px; }
+
+.subscribe-form input[type="submit"]:hover {
+  cursor: pointer; }
+
+.custom-mce-inline-error {
+  background-color: yellow; }
+
+#mce-responses {
+  padding-top: 16px;
+  text-align: center; }
+
+@media screen and (min-width: 576px) {
+  .subscribe-form {
+    padding: 40px 24px 48px 24px; } }
+
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    padding: 40px;
+    padding-bottom: 48px; } }
+
+footer {
+  height: 15vh; }
+
+footer .contact-us {
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 18px;
+  display: flex;
+  justify-content: center; }
+  footer .contact-us span {
+    color: black;
+    font-weight: 700;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer; }
+
+footer .fas {
+  display: flex;
+  align-items: center; }
+
+footer .fa-arrow-circle-right {
+  margin-left: 0.5rem; }
+
+body {
+  margin: 0; }

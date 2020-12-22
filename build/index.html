@@ -1,38 +1,71 @@
 <!doctype html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D02SJSE21V"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-D02SJSE21V', {
+        cookie_prefix: 'all_ears'
+      });
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>All Ears - coming soon</title>
-    <link href="/stylesheets/site.css" rel="stylesheet" />
-    <script src="/javascripts/site.js"></script>
+
+    <link href="/stylesheets/application.css" rel="stylesheet" />
+    <script src="/javascripts/application.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   </head>
   <body>
-    <div class="navbar">This is the navbar...</div>
+    <div class="banner">
+  <div class="container">
+    <div class="logo-button">
+  <img src="/images/logo-foreground.svg" class="logo-foreground" alt="" />
+</div>
 
+    <h1 class="coming-soon">Coming soon</h1>
+  </div>
+</div>
 
-
-<br>
-<p>This is the body...</p>
+<div class="container content bodyfont">
+  <p><span>Hello!</span> We are a new concept for audio tours of art exhibitions.</p>
+  <br>
+  <p><span>All ears</span> produces and distributes high quality, engaging audio guides for art
+  exhibitions to your personal smartphone and headphones. No more grimy handsets
+  and vintage earphones being passed around.</p>
+  <br>
+  <p>We aim to provide an immersive, highly engaging audio experience for <span>everyone</span>,
+  whether you are an art connoisseur or just a beginner.</p>
+</div>
 
 <div class="container">
   <!-- Begin Mailchimp Signup Form -->
-  <div id="mc_embed_signup">
+  <div id="mc_embed_signup" class="subscribe-form">
+
+    <h2 class="bodyfont"><span>Subscribe</span> to our mailing list for early access to new audio content at an exhibition near you</h2>
+
     <form action="https://art.us7.list-manage.com/subscribe/post?u=b30f2f9dd971cbe23f59702c6&amp;id=969afe04b5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div id="mc_embed_signup_scroll">
         <div class="mc-field-group">
-          <label for="mce-FNAME">First Name </label>
-          <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+          <label for="mce-FNAME">First name *</label>
+          <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
         </div>
         <div class="mc-field-group">
-          <label for="mce-LNAME">Last Name </label>
-          <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+          <label for="mce-LNAME">Last name *</label>
+          <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
         </div>
         <div class="mc-field-group">
-          <label for="mce-EMAIL">Email Address </label>
+          <label for="mce-EMAIL">Email address *</label>
           <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
         </div>
         <div id="mce-responses" class="clear">
@@ -43,7 +76,7 @@
         <div style="position: absolute; left: -5000px;" aria-hidden="true">
           <input type="text" name="b_b30f2f9dd971cbe23f59702c6_969afe04b5" tabindex="-1" value="">
         </div>
-        <div class="clear">
+        <div class="submit-button-container">
           <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
         </div>
       </div>
@@ -51,23 +84,20 @@
   </div>
 </div>
 
-<!-- Mailchimp error / success responses -->
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-
 <!-- Overwrite default Mailchimp error / succes responses -->
-<script>
-  var target = document.getElementById('mce-success-response');
-  var observer = new MutationObserver(function(mutations) {
-    mutations.forEach(function(mutation) {
-      if (target.innerHTML === "Thank you for subscribing!") {
-        target.innerHTML = "Check your email!";
-      }
-    });
-  });
-  var config = { attributes: true, childList: true, characterData: true };
-  observer.observe(target, config);
-</script>
+<script src="/javascripts/mailchimp_success_error_message.js"></script>
 
+<footer>
+  <div class="container">
+    <div class="contact-us bodyfont">
+      Or <span>contact us</span> for collaborations <i class="fas fa-arrow-circle-right"></i>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Mailchimp error / success responses -->
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
   </body>
 </html>
