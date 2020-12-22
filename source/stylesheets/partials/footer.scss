@@ -1,0 +1,30 @@
+footer {
+  height: 15vh;
+}
+
+footer .contact-us {
+  color: $light-gray;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+
+  span {
+    color: black;
+    font-weight: 700;
+
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    cursor: pointer;
+  }
+}
+
+footer .fas {
+  display: flex;
+  align-items: center;
+}
+
+footer .fa-arrow-circle-right {
+  margin-left: 0.5rem;
+}
