@@ -16,10 +16,12 @@
 @import "partials/content";
 @import "partials/subscribe-form";
 @import "partials/footer";
+@import "partials/background-shapes";
 
 // Reset
 body {
   margin: 0;
+  position: relative;
 }
 
 // Breakpoints
