@@ -11,7 +11,8 @@ $container-width-large: 600px;
 
 
 // Fonts
-$header-font: 'Raleway', sans-serif;
+// $header-font: 'Raleway', sans-serif;
+$header-font: 'Montserrat', sans-serif;
 $body-font: 'Montserrat', sans-serif;
 
 
@@ -20,3 +21,8 @@ $dark-blue: #061558;
 $blue-oyster-bay: #cbedf2;
 $red: #f02917;
 $light-gray: rgba(0,0,0,0.25);
+
+// Colors background shapes
+$bs-blue: #e4ebff;
+$bs-pink: #fbe4e5;
+$bs-yellow: #fffbe3;
