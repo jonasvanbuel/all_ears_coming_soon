@@ -14,10 +14,11 @@
   fill: $bs-blue;
   height: 80vw;
   transform: rotate(40deg);
+  margin: 0;
 
   position: relative;
   left: -2.5vw;
-  top: -2.5vw;
+  top: 2.5vw;
 }
 
 .background-shapes .bs-square {
@@ -53,7 +54,7 @@
   .background-shapes .bs-triangle {
     height: 50vw;
     left: -1.5vw;
-    top: -1.5vw;
+    top: 10vh;
   }
 
   .background-shapes .bs-square {
@@ -77,14 +78,12 @@
 @media (min-width: 1200px) {
   .background-shapes .bs-triangle {
     height: 35vw;
-    left: 0;
-    top: 0;
   }
 
   .background-shapes .bs-square {
     height: 35vw;
     width: 35vw;
-    left: 75vw;
+    left: 65vw;
 
     margin-top: 40vh;
   }
