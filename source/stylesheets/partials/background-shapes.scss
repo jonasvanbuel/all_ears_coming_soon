@@ -1,38 +1,95 @@
 .background-shapes {
   // background-color: yellow;
   height: 100%;
-  width: 100%;
+  width: 100vw;
 
   position: absolute;
   top: 0;
   left: 0;
   z-index: -10;
+  overflow: hidden;
 }
 
-.background-shapes .triangle {
+.background-shapes .bs-triangle {
   fill: $bs-blue;
+  height: 80vw;
+  transform: rotate(40deg);
+
   position: relative;
-  height: 70vw;
   left: -2.5vw;
   top: -2.5vw;
-  transform: rotate(40deg);
 }
 
+.background-shapes .bs-square {
+  background-color: $bs-pink;
+  height: 70vw;
+  width: 70vw;
+  transform: rotate(20deg);
 
+  position: relative;
+  left: 70vw;
+  margin-top: 20vh;
+  margin-right: 0;
+}
 
+.background-shapes .bs-circle {
+  background-color: $bs-yellow;
+  height: 90vw;
+  width: 90vw;
+  border-radius: 1000px;
 
+  position: relative;
+  left: -20vw;
+  margin-top: 50vh;
+}
+
+// RESPONSIVE
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) {
+// }
+
+// Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .background-shapes .triangle {
+  .background-shapes .bs-triangle {
     height: 50vw;
     left: -1.5vw;
     top: -1.5vw;
   }
+
+  .background-shapes .bs-square {
+    height: 50vw;
+    width: 50vw;
+    left: 70vw;
+
+    margin-top: 40vh;
+  }
+
+  .background-shapes .bs-circle {
+
+  }
 }
 
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+// }
+
+// Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .background-shapes .triangle {
-    height: 40vw;
+  .background-shapes .bs-triangle {
+    height: 35vw;
     left: 0;
     top: 0;
+  }
+
+  .background-shapes .bs-square {
+    height: 35vw;
+    width: 35vw;
+    left: 75vw;
+
+    margin-top: 40vh;
+  }
+
+  .background-shapes .bs-circle {
+
   }
 }
