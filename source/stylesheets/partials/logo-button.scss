@@ -4,7 +4,6 @@
   border-radius: $logo-width-small / 2;
 
   background-color: $dark-blue;
-
   box-shadow: inset -3px -1px 5px rgba(255, 255, 255, 0.3),
               inset 5px 3px 12px -2px rgba(255, 255, 255, 0.4),
               inset -8px -16px 20px 0px rgba(0, 0, 0, 0.2),
@@ -12,23 +11,47 @@
               2px 4px 12px rgba(0, 0, 0, 0.3),
               0px 3px 3px rgba(0, 0, 0, 0.2);
 
-  // margin-top: 5vh;
-  margin-bottom: 2.5vh;
-  margin-left: 20%;
+  position: absolute;
+  right: 15vw;
+  top: 5vh;
 }
 
 .logo-button .logo-foreground {
   transform: rotate($logo-angle);
 }
 
-@media screen and (min-width: 576px) {
+// RESPONSIVE
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .logo-button {
+    right: 20vw;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .logo-button {
+    right: 25vw;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
   .logo-button {
     height: $logo-width;
     width: $logo-width;
     border-radius: $logo-width / 2;
+
+    right: 30vw;
   }
 }
 
-@media screen and (min-width: 768px) {
-
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .logo-button {
+    right: 35vw;
+  }
 }

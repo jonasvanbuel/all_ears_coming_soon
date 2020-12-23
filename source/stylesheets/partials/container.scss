@@ -1,18 +1,33 @@
 .container {
-  // background-color: yellow;
-
-  width: $container-width-small;
   margin: 0 auto;
+  width: 90vw;
 }
 
-@media screen and (min-width: 576px) {
+// RESPONSIVE TEMPLATE
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
   .container {
-    width: $container-width-medium;
+    width: 500px;
   }
 }
 
-@media screen and (min-width: 768px) {
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {
+// }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
   .container {
-    width: $container-width-large;
+    width: 600px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .container {
+    width: 700px;
   }
 }
