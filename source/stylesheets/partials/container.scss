@@ -1,6 +1,17 @@
 .container {
-  margin: 0 auto;
   width: 90vw;
+  margin: 0 auto;
+}
+
+.img-container {
+  width: 100vw;
+  margin: 60px auto;
+  margin-bottom: 0;
+  padding-bottom: 60px;
+
+  // background-color: yellow;
+  position: relative;
+  overflow: hidden;
 }
 
 // RESPONSIVE TEMPLATE
@@ -9,8 +20,14 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  .container {
+  .container,
+  .img-container {
     width: 500px;
+    overflow: visible;
+  }
+
+  .img-container {
+    margin-top: 80px;
   }
 }
 
@@ -20,14 +37,17 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .container {
+  .container,
+  .img-container {
     width: 600px;
   }
+
+  .img-container {
+    margin-top: 100px;
+  }
+
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .container {
-    width: 700px;
-  }
-}
+// @media (min-width: 1200px) {
+// }

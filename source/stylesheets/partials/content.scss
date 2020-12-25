@@ -10,15 +10,44 @@ p {
 
 .content {
   margin-top: 5vh;
-  margin-bottom: 7.5vh;
+  margin-bottom: 2.5vh;
 }
 
-@media screen and (min-width: 576px) {
-  .content {
+.iphone-render {
+  width: 125vw;
+  max-width: 600px;
 
+  position: relative;
+  left: -10vw;
+  overflow: hidden;
+
+  filter: drop-shadow(0px 20px 40px rgba($blue-oyster-bay, 0.5));
+}
+
+// RESPONSIVE TEMPLATE
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .iphone-render {
+    width: 110%;
+    left: -10%;
   }
 }
 
-@media screen and (min-width: 768px) {
-
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .iphone-render {
+    width: 120%;
+    left: -20%;
+  }
 }
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+// }
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+// }
