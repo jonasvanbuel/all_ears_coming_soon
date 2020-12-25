@@ -1,0 +1,26 @@
+.container {
+  width: 90vw;
+  margin: 0 auto; }
+
+.img-container {
+  width: 100vw;
+  margin: 60px auto;
+  margin-bottom: 0;
+  padding-bottom: 60px;
+  position: relative;
+  overflow: hidden; }
+
+@media (min-width: 576px) {
+  .container,
+  .img-container {
+    width: 500px;
+    overflow: visible; }
+  .img-container {
+    margin-top: 80px; } }
+
+@media (min-width: 992px) {
+  .container,
+  .img-container {
+    width: 600px; }
+  .img-container {
+    margin-top: 100px; } }
