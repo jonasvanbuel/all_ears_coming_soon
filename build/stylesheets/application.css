@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap");
 .bodyfont {
-  color: #061558;
+  color: #092c6a;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 21px;
@@ -38,18 +38,18 @@
   width: 100%;
   position: relative;
   display: flex;
-  justify-content: center; }
+  flex-direction: column; }
 
 .banner .coming-soon {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 3rem;
-  color: #061558;
+  color: #092c6a;
   text-align: center;
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
-  margin-top: 30vh;
-  margin-bottom: 10vh;
+  margin-top: 40px;
+  margin-bottom: 80px;
   position: relative; }
 
 @media (min-width: 768px) {
@@ -57,38 +57,19 @@
     font-size: 3.5rem; } }
 
 .logo-button {
-  height: 120px;
-  width: 120px;
-  border-radius: 60px;
-  background-color: #061558;
-  -webkit-box-shadow: inset -3px -1px 5px rgba(255, 255, 255, 0.3), inset 5px 3px 12px -2px rgba(255, 255, 255, 0.4), inset -8px -16px 20px 0px rgba(0, 0, 0, 0.2), 0px 0px 12px 0px rgba(0, 0, 0, 0.4), 2px 4px 12px rgba(0, 0, 0, 0.3), 0px 3px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: inset -3px -1px 5px rgba(255, 255, 255, 0.3), inset 5px 3px 12px -2px rgba(255, 255, 255, 0.4), inset -8px -16px 20px 0px rgba(0, 0, 0, 0.2), 0px 0px 12px 0px rgba(0, 0, 0, 0.4), 2px 4px 12px rgba(0, 0, 0, 0.3), 0px 3px 3px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  right: 15vw;
-  top: 5vh; }
-
-.logo-button .logo-foreground {
-  -webkit-transform: rotate(6deg);
-          transform: rotate(6deg); }
+  height: 140px;
+  width: 140px;
+  margin-left: 45vw;
+  margin-top: 40px; }
 
 @media (min-width: 576px) {
   .logo-button {
-    right: 20vw; } }
-
-@media (min-width: 768px) {
-  .logo-button {
-    right: 25vw; } }
+    margin-left: 50vw; } }
 
 @media (min-width: 992px) {
   .logo-button {
-    height: 140px;
-    width: 140px;
-    border-radius: 70px;
-    right: 30vw; } }
-
-@media (min-width: 1200px) {
-  .logo-button {
-    right: 35vw; } }
+    height: 160px;
+    width: 160px; } }
 
 p {
   margin-top: 0;
@@ -122,11 +103,11 @@ p {
 
 .subscribe-form {
   font-family: "Montserrat", sans-serif;
-  color: #061558;
+  color: #092c6a;
   background-color: #cbedf2;
   border-radius: 24px;
-  -webkit-box-shadow: inset 0px -5px 0px #061558;
-          box-shadow: inset 0px -5px 0px #061558;
+  -webkit-box-shadow: inset 0px -5px 0px #092c6a;
+          box-shadow: inset 0px -5px 0px #092c6a;
   position: relative;
   padding: 32px 20px 40px 20px;
   margin-bottom: 80px;
@@ -155,7 +136,7 @@ p {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: #061558;
+    color: #092c6a;
     padding: 3px 20px 1px 20px; }
   .subscribe-form .mc-field-group input:focus {
     -webkit-box-shadow: inset 2px 3px 3px rgba(0, 0, 0, 0.25);
@@ -167,7 +148,7 @@ p {
   right: 40px; }
 
 .subscribe-form input[type="submit"] {
-  background-color: #061558;
+  background-color: #092c6a;
   border: none;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
