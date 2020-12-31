@@ -9,6 +9,7 @@ p {
 }
 
 .content {
+  position: relative;
 }
 
 .iphone-render {
@@ -21,6 +22,22 @@ p {
 
   filter: drop-shadow(0px 20px 40px rgba($blue-oyster-bay, 0.5));
 }
+
+.quote {
+  margin: $mg-xxlarge 0 $mg-xxlarge $mg-xlarge;
+  position: relative;
+}
+
+.quote-symbol {
+  fill: $dark-blue;
+  position: absolute;
+
+  width: 56px;
+  left: 0px;
+  top: -24px;
+}
+
+
 
 // RESPONSIVE TEMPLATE
 // Extra small devices (portrait phones, less than 576px)
@@ -39,6 +56,16 @@ p {
   .iphone-render {
     width: 120%;
     left: -20%;
+  }
+
+  .quote {
+    margin: $mg-xxlarge 0 $mg-xxlarge $mg-medium;
+  }
+
+  .quote-symbol {
+    width: 72px;
+    left: -$mg-large;
+    top: -$mg-medium;
   }
 }
 

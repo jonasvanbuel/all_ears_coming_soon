@@ -1,5 +1,4 @@
 footer {
-  height: 15vh;
 }
 
 footer .contact-us {
@@ -8,6 +7,9 @@ footer .contact-us {
 
   display: flex;
   justify-content: center;
+
+  margin-top: 100px;
+  padding-bottom: 100px;
 
   a {
     text-decoration: none;
