@@ -7,6 +7,9 @@
   font-size: 20px;
   line-height: 1.5; }
 
+.quote {
+  font-style: italic; }
+
 .container {
   width: 90vw;
   margin: 0 auto; }
@@ -50,8 +53,8 @@
   font-size: 3rem;
   color: #092c6a;
   text-align: center;
-  -webkit-transform: rotate(-8deg);
-          transform: rotate(-8deg);
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
   margin-top: 40px;
   margin-bottom: 120px;
   position: relative; }
@@ -72,8 +75,8 @@
 
 @media (min-width: 992px) {
   .logo-button {
-    height: 160px;
-    width: 160px; } }
+    height: 150px;
+    width: 150px; } }
 
 p {
   margin-top: 0;
@@ -81,6 +84,9 @@ p {
   p span {
     font-family: "Montserrat", sans-serif;
     font-weight: 800; }
+
+.content {
+  position: relative; }
 
 .iphone-render {
   width: 125vw;
@@ -91,6 +97,17 @@ p {
   -webkit-filter: drop-shadow(0px 20px 40px rgba(203, 237, 242, 0.5));
           filter: drop-shadow(0px 20px 40px rgba(203, 237, 242, 0.5)); }
 
+.quote {
+  margin: 96px 0 96px 72px;
+  position: relative; }
+
+.quote-symbol {
+  fill: #092c6a;
+  position: absolute;
+  width: 56px;
+  left: 0px;
+  top: -24px; }
+
 @media (min-width: 576px) {
   .iphone-render {
     width: 110%;
@@ -99,7 +116,13 @@ p {
 @media (min-width: 768px) {
   .iphone-render {
     width: 120%;
-    left: -20%; } }
+    left: -20%; }
+  .quote {
+    margin: 96px 0 96px 40px; }
+  .quote-symbol {
+    width: 72px;
+    left: -56px;
+    top: -40px; } }
 
 .subscribe-form {
   font-family: "Montserrat", sans-serif;
@@ -109,9 +132,7 @@ p {
   -webkit-box-shadow: inset 0px -5px 0px #092c6a;
           box-shadow: inset 0px -5px 0px #092c6a;
   position: relative;
-  padding: 32px 20px 40px 20px;
-  margin-top: 100px;
-  margin-bottom: 80px; }
+  padding: 32px 20px 40px 20px; }
 
 .subscribe-form > h2 {
   margin-top: 0;
@@ -178,14 +199,13 @@ p {
     padding: 40px;
     padding-bottom: 48px; } }
 
-footer {
-  height: 15vh; }
-
 footer .contact-us {
   color: rgba(9, 44, 106, 0.7);
   font-size: 18px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 100px;
+  padding-bottom: 100px; }
   footer .contact-us a {
     text-decoration: none;
     color: inherit;
@@ -240,7 +260,8 @@ footer .fa-arrow-circle-right {
   border-radius: 1000px;
   position: relative;
   left: -20vw;
-  margin-top: 50vh; }
+  margin-top: 50vh;
+  margin-bottom: 50vh; }
 
 @media (min-width: 576px) {
   .background-shapes .bs-triangle {
