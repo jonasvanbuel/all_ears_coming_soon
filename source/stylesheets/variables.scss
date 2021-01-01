@@ -2,24 +2,33 @@
 $banner-height: 240px;
 
 $logo-width-small: 140px;
-$logo-width-large: 160px;
+$logo-width-large: 150px;
 
-$title-angle: -8deg;
+$title-angle: -4deg;
 
-// Fonts
+
+// MARGINS
+$mg-xxlarge: 96px;
+$mg-xlarge: 72px;
+$mg-large: 56px;
+$mg-medium: 40px;
+$mg-small: 32px;
+
+
+// FONTS
 // $header-font: 'Raleway', sans-serif;
 $header-font: 'Montserrat', sans-serif;
 $body-font: 'Montserrat', sans-serif;
 
 
-// Colors
+// COLORS
 // $dark-blue: #061558;
 $dark-blue: #092c6a;
 $blue-oyster-bay: #cbedf2;
 $red: #f02917;
 $light-gray: rgba(0,0,0,0.25);
 
-// Colors background shapes
+// Background shapes
 $bs-blue: #e4ebff;
 $bs-pink: #fbe4e5;
 $bs-yellow: #fffbe3;
