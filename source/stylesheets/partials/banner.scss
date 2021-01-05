@@ -15,8 +15,9 @@
   text-align: center;
   transform: rotate($title-angle);
 
-  margin-top: 40px;
-  margin-bottom: 120px;
+  // margin-top: 40px;
+  // margin-bottom: 120px;
+  margin: 0;
 
   position: relative;
 }
@@ -27,13 +28,13 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+  .banner .coming-soon {
+    font-size: 3.5rem;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .banner .coming-soon {
-    font-size: 3.5rem;
-  }
 }
 
 // Large devices (desktops, 992px and up)
