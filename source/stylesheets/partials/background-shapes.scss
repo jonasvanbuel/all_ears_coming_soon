@@ -10,110 +10,67 @@
 }
 
 .background-shapes .bs-triangle {
-  fill: rgba($bs-blue, 0.5);
-  height: 80vw;
-  transform: rotate(40deg);
+  fill: rgba($bs-blue, 0.45);
+  height: 110vw;
+  transform: rotate(48deg);
   margin: 0;
 
   position: relative;
-  left: -2.5vw;
+  left: -8vw;
   top: 2.5vw;
 }
 
 .background-shapes .bs-square {
-  background-color: rgba($bs-pink, 0.5);
-  height: 80vw;
-  width: 80vw;
-  transform: rotate(20deg);
+  background-color: rgba($bs-pink, 0.45);
+  height: 90vw;
+  width: 90vw;
+  transform: rotate(16deg);
 
   position: relative;
-  left: 30vw;
-  margin-top: 30vh;
+  left: 15vw;
+  margin-top: -32vw;
   margin-right: 0;
 }
 
 .background-shapes .bs-circle {
-  background-color: $bs-yellow;
-  height: 90vw;
-  width: 90vw;
-  border-radius: 1000px;
+  background-color: rgba($bs-yellow, 0.35);
+  height: 100vw;
+  width: 100vw;
+  border-radius: 50%;
 
   position: relative;
+  margin-top: -20vw;
+  margin-bottom: -8vw;
   left: -20vw;
-  margin-top: 50vh;
-  margin-bottom: 50vh;
 }
 
 
 // RESPONSIVE
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  .background-shapes .bs-triangle {
-    height: 70vw;
-    left: -1.5vw;
-    top: 5vh;
-  }
+// @media (min-width: 576px) {
+//   .background-shapes .bs-triangle {
 
-  .background-shapes .bs-square {
-    height: 60vw;
-    width: 60vw;
-    left: 50vw;
-    margin-top: 40vh;
-  }
-}
+//   }
+
+//   .background-shapes .bs-square {
+
+//   }
+
+//   .background-shapes .bs-circle {
+
+//   }
+// }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .background-shapes .bs-triangle {
-    height: 60vw;
-    left: -1.5vw;
-    top: 5vh;
+    height: 100vw;
   }
 
   .background-shapes .bs-square {
-    height: 50vw;
-    width: 50vw;
-    left: 55vw;
-  }
-
-  .background-shapes .bs-circle {
-
-  }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .background-shapes .bs-triangle {
-    height: 50vw;
-    left: 5vw;
-    top: 5vh;
-  }
-
-  .background-shapes .bs-square {
-    height: 40vw;
-    width: 40vw;
-    left: 60vw;
-  }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .background-shapes .bs-triangle {
-    height: 35vw;
-    max-height: 550px;
-    left: 5vw;
-    top: 2vh;
-  }
-
-  // TOO LARGE
-  .background-shapes .bs-square {
-    height: 35vw;
-    max-height: 500px;
-    width: 35vw;
-    max-width: 500px;
-    left: 65vw;
-
-    margin-top: 40vh;
+    height: 80vw;
+    width: 80vw;
+    left: 15vw;
   }
 
   .background-shapes .bs-circle {
@@ -121,3 +78,37 @@
     width: 90vw;
   }
 }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .background-shapes .bs-triangle {
+    height: 80vw;
+  }
+
+  .background-shapes .bs-square {
+    height: 70vw;
+    width: 70vw;
+    left: 30vw;
+  }
+
+  .background-shapes .bs-circle {
+    height: 80vw;
+    width: 80vw;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+//   .background-shapes .bs-triangle {
+
+//   }
+
+//   // TOO LARGE
+//   .background-shapes .bs-square {
+
+//   }
+
+//   .background-shapes .bs-circle {
+
+//   }
+// }
