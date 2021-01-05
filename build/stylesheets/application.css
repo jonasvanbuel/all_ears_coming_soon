@@ -16,7 +16,7 @@
 
 .img-container {
   width: 100vw;
-  margin: 60px auto;
+  margin: 100px auto;
   margin-bottom: 0;
   padding-bottom: 60px;
   position: relative;
@@ -55,11 +55,10 @@
   text-align: center;
   -webkit-transform: rotate(-4deg);
           transform: rotate(-4deg);
-  margin-top: 40px;
-  margin-bottom: 120px;
+  margin: 0;
   position: relative; }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .banner .coming-soon {
     font-size: 3.5rem; } }
 
@@ -67,7 +66,8 @@
   height: 140px;
   width: 140px;
   margin-left: 45vw;
-  margin-top: 40px; }
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
 @media (min-width: 576px) {
   .logo-button {
@@ -81,24 +81,20 @@
 p {
   margin-top: 0;
   margin-bottom: 0; }
-  p span {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800; }
 
 .content {
   position: relative; }
 
 .iphone-render {
-  width: 125vw;
-  max-width: 600px;
+  width: 130vw;
   position: relative;
-  left: -10vw;
+  left: -15vw;
   overflow: hidden;
   -webkit-filter: drop-shadow(0px 20px 40px rgba(203, 237, 242, 0.5));
           filter: drop-shadow(0px 20px 40px rgba(203, 237, 242, 0.5)); }
 
 .quote {
-  margin: 96px 0 96px 72px;
+  margin: 140px 0 140px 72px;
   position: relative; }
 
 .quote-symbol {
@@ -107,6 +103,11 @@ p {
   width: 56px;
   left: 0px;
   top: -24px; }
+
+@media (min-width: 450px) {
+  .iphone-render {
+    width: 120vw;
+    left: -10vw; } }
 
 @media (min-width: 576px) {
   .iphone-render {
@@ -118,11 +119,16 @@ p {
     width: 120%;
     left: -20%; }
   .quote {
-    margin: 96px 0 96px 40px; }
+    margin: 140px 0 140px 40px; }
   .quote-symbol {
     width: 72px;
     left: -56px;
     top: -40px; } }
+
+@media (min-width: 992px) {
+  .iphone-render {
+    width: 110%;
+    left: -10%; } }
 
 .subscribe-form {
   font-family: "Montserrat", sans-serif;
@@ -132,7 +138,9 @@ p {
   -webkit-box-shadow: inset 0px -5px 0px #092c6a;
           box-shadow: inset 0px -5px 0px #092c6a;
   position: relative;
-  padding: 32px 20px 40px 20px; }
+  padding: 32px 20px 40px 20px;
+  margin-top: 80px;
+  margin-bottom: 120px; }
 
 .subscribe-form > h2 {
   margin-top: 0;
@@ -192,7 +200,9 @@ p {
 
 @media screen and (min-width: 576px) {
   .subscribe-form {
-    padding: 40px 24px 48px 24px; } }
+    padding: 40px 24px 48px 24px;
+    margin-top: 140px;
+    margin-right: 16px; } }
 
 @media screen and (min-width: 768px) {
   .subscribe-form {
@@ -200,7 +210,7 @@ p {
     padding-bottom: 48px; } }
 
 footer .contact-us {
-  color: rgba(9, 44, 106, 0.7);
+  color: rgba(9, 44, 106, 0.8);
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -233,83 +243,57 @@ footer .fa-arrow-circle-right {
   overflow: hidden; }
 
 .background-shapes .bs-triangle {
-  fill: rgba(228, 235, 255, 0.5);
-  height: 80vw;
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
+  fill: rgba(228, 235, 255, 0.45);
+  height: 110vw;
+  -webkit-transform: rotate(48deg);
+          transform: rotate(48deg);
   margin: 0;
   position: relative;
-  left: -2.5vw;
+  left: -8vw;
   top: 2.5vw; }
 
 .background-shapes .bs-square {
-  background-color: rgba(251, 228, 229, 0.5);
-  height: 80vw;
-  width: 80vw;
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
+  background-color: rgba(251, 228, 229, 0.45);
+  height: 90vw;
+  width: 90vw;
+  -webkit-transform: rotate(16deg);
+          transform: rotate(16deg);
   position: relative;
-  left: 30vw;
-  margin-top: 30vh;
+  left: 15vw;
+  margin-top: -32vw;
   margin-right: 0; }
 
 .background-shapes .bs-circle {
-  background-color: #fffbe3;
-  height: 90vw;
-  width: 90vw;
-  border-radius: 1000px;
+  background-color: rgba(253, 245, 186, 0.35);
+  height: 100vw;
+  width: 100vw;
+  border-radius: 50%;
   position: relative;
-  left: -20vw;
-  margin-top: 50vh;
-  margin-bottom: 50vh; }
-
-@media (min-width: 576px) {
-  .background-shapes .bs-triangle {
-    height: 70vw;
-    left: -1.5vw;
-    top: 5vh; }
-  .background-shapes .bs-square {
-    height: 60vw;
-    width: 60vw;
-    left: 50vw;
-    margin-top: 40vh; } }
+  margin-top: -20vw;
+  margin-bottom: -8vw;
+  left: -20vw; }
 
 @media (min-width: 768px) {
   .background-shapes .bs-triangle {
-    height: 60vw;
-    left: -1.5vw;
-    top: 5vh; }
+    height: 100vw; }
   .background-shapes .bs-square {
-    height: 50vw;
-    width: 50vw;
-    left: 55vw; } }
-
-@media (min-width: 992px) {
-  .background-shapes .bs-triangle {
-    height: 50vw;
-    left: 5vw;
-    top: 5vh; }
-  .background-shapes .bs-square {
-    height: 40vw;
-    width: 40vw;
-    left: 60vw; } }
-
-@media (min-width: 1200px) {
-  .background-shapes .bs-triangle {
-    height: 35vw;
-    max-height: 550px;
-    left: 5vw;
-    top: 2vh; }
-  .background-shapes .bs-square {
-    height: 35vw;
-    max-height: 500px;
-    width: 35vw;
-    max-width: 500px;
-    left: 65vw;
-    margin-top: 40vh; }
+    height: 80vw;
+    width: 80vw;
+    left: 15vw; }
   .background-shapes .bs-circle {
     height: 90vw;
     width: 90vw; } }
+
+@media (min-width: 992px) {
+  .background-shapes .bs-triangle {
+    height: 80vw; }
+  .background-shapes .bs-square {
+    height: 70vw;
+    width: 70vw;
+    left: 30vw; }
+  .background-shapes .bs-circle {
+    height: 80vw;
+    width: 80vw; } }
 
 body {
   margin: 0;
