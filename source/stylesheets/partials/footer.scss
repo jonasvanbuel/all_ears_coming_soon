@@ -1,30 +1,33 @@
-footer {
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-footer .contact-us {
-  color: rgba($dark-blue, 0.8);
-  font-size: 18px;
+
+footer a.contact-us {
+  color: rgba($dark-blue, 1);
 
   display: flex;
   justify-content: center;
 
-  margin-top: 100px;
-  padding-bottom: 100px;
+  margin-top: $mg-xxlarge;
+  margin-bottom: $mg-xxlarge;
 
-  a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  // font-weight: 200;
 
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+  cursor: pointer;
 
-    cursor: pointer;
-  }
+  transition: 0.5s;
+}
 
-  a:hover {
-    color: rgba($dark-blue, 1);
-  }
+
+footer a.contact-us:hover {
+  // font-weight: 700;
+  // color: $lime-green;
+  font-size: 1.05rem;
 }
 
 footer .fas {
