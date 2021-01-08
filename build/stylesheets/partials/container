@@ -20,7 +20,8 @@
     width: 500px;
     overflow: visible; }
   .img-container {
-    margin-top: 80px; } }
+    margin-top: 80px;
+    padding-right: 16px; } }
 
 @media (min-width: 992px) {
   .container,
