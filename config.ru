@@ -1,5 +1,7 @@
 require 'middleman/rack'
 run Middleman.server
 
-require 'rack/ssl-enforcer'
-use Rack::SslEnforcer
+# Force SSL
+unless ENV["DEV_ENV"]
+  use Rack::SSL
+end
