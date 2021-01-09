@@ -77,5 +77,3 @@ configure :build do
 end
 
 activate :livereload
-
-redirect "http://www.allears.art", to: "https://www.allears.art"

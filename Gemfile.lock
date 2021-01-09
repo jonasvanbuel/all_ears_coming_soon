@@ -98,6 +98,8 @@ GEM
     rack (2.2.3)
     rack-livereload (0.3.17)
       rack
+    rack-ssl (1.4.1)
+      rack
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -122,6 +124,7 @@ DEPENDENCIES
   middleman-autoprefixer (~> 2.7)
   middleman-favicon-maker (~> 4.1)
   middleman-livereload
+  rack-ssl (~> 1.4, >= 1.4.1)
   tzinfo-data
   wdm (~> 0.1)
 
