@@ -8,5 +8,4 @@ console.log('Running application.js...');
 if (location.host !== "localhost:4567" && location.protocol !== 'https:') {
     console.log('Replacing location.protocol...');
     location.protocol = "https:";
-    console.log(`Updated location.protocol:${location.protocol}`);
 }
