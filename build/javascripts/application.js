@@ -1,1 +1,1 @@
-console.log("Running application.js..."),"localhost:4567"!==location.host&&"https:"!==location.protocol&&(console.log("Replacing location.protocol..."),location.protocol="https:");
+"localhost:4567"!==location.host&&"https:"!==location.protocol&&(location.protocol="https:");
